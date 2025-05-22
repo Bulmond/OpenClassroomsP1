@@ -61,6 +61,10 @@ a {
     font-size: 16px;
 }
 
+.card-subtitle {
+    font-size: 14px;
+}
+
 .euro {
     font-weight: 700;
 }
@@ -70,7 +74,12 @@ a {
 }
 
 h1 {
+    font-size: 22px;
     margin: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 /****** Header And Navbar ***********/
@@ -99,7 +108,6 @@ nav ul {
     margin: 0;
     padding: 0 50px;
     gap: 68px;
-    list-style: none;
 }
 
 nav li {
@@ -208,7 +216,7 @@ nav li:hover {
     width: 24px;
     height: 24px;
     border: 1px solid #d9d9d9;
-    border-radius: 24px;
+    border-radius: 20px;
 }
 
 
@@ -319,8 +327,67 @@ nav li:hover {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+.activities {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
 
+.activity-cards {
+    display: flex;
+    gap: 30px;
+}
 
+.activity-cards .card-title {
+    margin: 0;
+}
+
+.activity-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activity-cards .card-content {
+    padding: 20px 19px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.activity-cards .card {
+    flex: 1;
+    padding: 0;
+}
+
+/****** Footer ***********/
+.footer {
+    display: flex;
+    background-color: var(--main-bg-color);
+}
+
+.footer article {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.footer h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
