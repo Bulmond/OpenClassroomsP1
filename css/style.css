@@ -85,12 +85,13 @@ ul {
     list-style: none;
 }
 
-/****** Header And Navbar ***********/
 header {
     display: flex;
 }
 
-nav {
+
+/****** Header And Navbar ***********/
+.menu {
     display: flex;
     margin-left: auto;
     height: 35px;
@@ -98,7 +99,6 @@ nav {
 
 .logo {
    padding: 30px 50px;
-   gap: 10px; 
 }
 
 .logo img {
@@ -106,21 +106,21 @@ nav {
    height: 19px;
 }
 
-nav ul {
+.menu .menu-list {
     display: flex;
     margin: 0;
     padding: 0 50px;
     gap: 68px;
 }
 
-nav li {
+.menu li {
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 2px solid transparent;
 }
 
-nav li:hover {
+.menu li:hover {
     border-top: 2px solid #0065FC;
 }
 
@@ -189,6 +189,7 @@ nav li:hover {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
+    min-height: 50px;
     background-color: transparent;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
@@ -247,7 +248,7 @@ nav li:hover {
 .hebergements .card {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 100%;
     gap: 4px;
     padding-bottom: 15px;
 }
@@ -255,11 +256,12 @@ nav li:hover {
 .hebergements .column {
     display: flex;
     gap: 30px;
-    justify-content: space-around;
 }
 
 .column a {
+    display: flex;
     flex: 1;
+    width: 33%;
 }
 
 .hebergements img {
@@ -455,5 +457,74 @@ nav li:hover {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+/****** Header ***********/
+    body {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu .menu-list {
+        width: 100%;
+        padding: 0;
+        gap: 0px;
+    }
+
+    .menu-list li {
+        width: 50%;
+        border-top: 0px;
+        border-bottom: 2px solid transparent;
+    }
+
+    .menu li:hover {
+        border-top: 0px;
+        border-bottom: 2px solid var(--main-color);
+        color: var(--main-color);
+    }
+
+    .menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+/****** Body ***********/
+
+    .main-container {
+        padding: 30px 20px;
+    }
+
+/****** Info ***********/
+
+    article.filters {
+        height: 161px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .filters .column {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .filters strong {
+        align-self: flex-start;
+    }
+
+    .filters button {
+        width: 50%;
+    }
 }
