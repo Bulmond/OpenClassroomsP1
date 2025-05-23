@@ -13,10 +13,14 @@
     color: var(--main-color);
 }
 
+html {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 0;
     max-width: 1440px;
 }
@@ -278,8 +282,13 @@ nav li:hover {
 .hebergements .card-title {
     margin: 0;
 }
+
 .hebergements .card-subtitle {
     margin: 0;
+}
+
+.hebergements .fa-star {
+    font-size: 0.75em;
 }
 
 /****** Populaires ***********/
@@ -357,8 +366,11 @@ nav li:hover {
     border-bottom-right-radius: 20px;
 }
 
-.activity-cards .card {
+.activity-cards a {
     flex: 1;
+}
+
+.activity-cards .card {
     padding: 0;
 }
 
@@ -423,6 +435,10 @@ nav li:hover {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activity-cards img {
+        max-height: 200px;
     }
 }
 
