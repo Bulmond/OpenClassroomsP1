@@ -53,11 +53,11 @@ a {
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     box-shadow: 0px 3px 15px 0px #0000001A;
+    padding: 5px;
 }
 
 .card img {
     object-fit: cover;
-    margin-bottom: -4px;
 }
 
 .card-title {
@@ -283,7 +283,7 @@ header {
     max-height: 114px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border: 5px solid white;
+    margin-bottom: -4px;
 }
 
 .hebergements .card-content {
@@ -340,8 +340,6 @@ header {
 .populaires-cards img {
     width: 33%;
     height: 136px;
-    border: 5px solid white;
-    border-right: 0px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -390,6 +388,7 @@ header {
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-bottom: -4px;
 }
 
 .activity-cards .card-content {
