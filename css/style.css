@@ -438,7 +438,7 @@ header {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    article.filters {
+    div.filters {
         height: 91px;
         flex-direction: column;
         align-items: flex-start;
@@ -547,7 +547,7 @@ header {
         padding: 0px 20px;
     }
 
-    article.search-bar {
+    div.search-bar {
         width: 100%;
     }
 
@@ -582,7 +582,7 @@ header {
         color: white;
     }
 
-    article.filters {
+    div.filters {
         height: 161px;
         flex-wrap: wrap;
         gap: 20px;
