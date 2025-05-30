@@ -504,6 +504,11 @@ header {
 
     .activity-cards img {
         max-height: 200px;
+        min-height: 200px;
+    }
+
+    .activity-cards .card-content {
+        padding: 16px 19px;
     }
 }
 
