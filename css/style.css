@@ -183,7 +183,7 @@ header {
     border-bottom-right-radius: 15px;
 }
 
-.search-button>.fa-solid {
+.search-button > .fa-solid {
     display: none;
 }
 
@@ -191,8 +191,12 @@ header {
     display: grid;
     grid-template-columns: repeat(4, min-content) max-content;
     gap: 15px;
-    height: 50px;
     align-items: center;
+    width: fit-content;
+}
+
+.filter-title {
+    font-size: 18px;
 }
 
 .filters {
@@ -212,8 +216,8 @@ header {
     background-color: var(--filter-bg-color);
 }
 
-.filters strong {
-    font-size: 18px;
+.filters > .fa-solid {
+    font-size: 22px;
 }
 
 .infobar {
@@ -440,6 +444,16 @@ header {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .grid-filter {
+        grid-template-rows: min-content max-content;
+        grid-template-columns: repeat(3, min-content) max-content;
+        row-gap: 20px;
+    }
+
+    .filters {
+        grid-row-start: 2; 
+    }
+
     .filters span {
         font-size: 16px;
     }
@@ -570,30 +584,9 @@ header {
         color: white;
     }
 
-    div.filters {
-        height: 161px;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .filters .columns {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .filters .column {
-        width: 100%;
-        display: flex;
-        gap: 0px;
-        justify-content: space-between;
-    }
-
-    .filters strong {
-        align-self: flex-start;
-    }
-
-    .filters button {
-        width: calc(50% - 5px);
+    .grid-filter {
+        grid-template-rows: min-content repeat(2, max-content);
+        grid-template-columns: repeat(2, min-content);
     }
 
     .filters span {
