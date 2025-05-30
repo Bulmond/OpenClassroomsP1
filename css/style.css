@@ -187,28 +187,18 @@ header {
     display: none;
 }
 
-.filters {
-    display: flex;
-    align-items: center;
+.grid-filter {
+    display: grid;
+    grid-template-columns: repeat(4, min-content) max-content;
     gap: 15px;
     height: 50px;
+    align-items: center;
 }
 
-.filters .column {
+.filters {
     display: flex;
-    gap: 15px;
-}
-
-.filters .columns {
-    display: flex;
-    gap: 15px;
-    width: 100%;
-}
-
-.filters button {
-    display: flex;
-    flex-wrap: nowrap;
     gap: 10px;
+    align-items: center;
     min-height: 50px;
     background-color: transparent;
     border: 2px solid #d9d9d9;
@@ -450,23 +440,6 @@ header {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    div.filters {
-        height: 91px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .filters .column {
-        width: auto;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .filters strong {
-        align-self: flex-start;
-    }
-
     .filters span {
         font-size: 16px;
     }
