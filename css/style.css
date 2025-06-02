@@ -212,7 +212,7 @@ header {
     font-weight: 700;
 }
 
-.filters button:hover {
+.grid-filter button:hover {
     background-color: var(--filter-bg-color);
 }
 
